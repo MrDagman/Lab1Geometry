@@ -13,8 +13,8 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <UniformGrid Grid.Row="0" Rows="1" Columns = "3">
-            <Button Content="Произвольный треугольник" Margin="10" Name ="Tria"></Button>
-            <Button Content="Произвольный прямоугольник" Margin="10" Name ="Rect"></Button>
+            <Button Content="Произвольный треугольник" Margin="10" Name ="Triangle"></Button>
+            <Button Content="Произвольный прямоугольник" Margin="10" Name ="Rectange"></Button>
             <Button Content="Квадрат" Margin="10" Name="Square" ></Button>
         </UniformGrid>
         <StackPanel Grid.Row="1" Orientation="Vertical">
