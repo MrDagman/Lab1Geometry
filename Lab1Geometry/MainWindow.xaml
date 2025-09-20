@@ -19,9 +19,9 @@
         </UniformGrid>
         <StackPanel Grid.Row="1" Orientation="Vertical">
             <TextBlock Text="Сдвиг по Х" Margin="0,0,0,5"/>
-            <Slider x:Name="Slider1" Minimum="0" Maximum="300" Value="150" Margin="0,0,0,20"/>
+            <Slider x:Name="Slider1" Minimum="-300" TickFrequency="10" Maximum="300" Value="150" Margin="0,0,0,20"/>
             <TextBlock Text="Сдвиг по Y" Margin="0,0,0,5"/>
-            <Slider x:Name="Slider2" Minimum="0" Maximum="300" Value="150"/>
+            <Slider x:Name="Slider2" Minimum="-300" TickFrequency="10" Maximum="300" Value="150"/>
         </StackPanel>
         <Border Grid.Row="2" BorderBrush="LightGray" BorderThickness="2">
             <Canvas x:Name="Scene" Margin="15" Background="LightGray">
