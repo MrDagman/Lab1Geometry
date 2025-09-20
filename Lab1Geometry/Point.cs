@@ -29,7 +29,6 @@ namespace Lab1Geometry
 
         public void addX(int x) => X += x;
         public void addY(int y) => Y += y;
-        public void setX(int x) => X = x;
-        public void setY(int y) => Y = y;
+    
     }
 }

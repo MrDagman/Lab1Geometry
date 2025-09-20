@@ -50,7 +50,7 @@ namespace Lab1Geometry
             double maxX = Scene.ActualWidth - 50;
             double maxY = Scene.ActualHeight - 50;
 
-            if (maxX < 100 || maxY < 100) return; // Проверка на минимальный размер
+            if (maxX < 60 || maxY < 60) return; // Проверка на минимальный размер
 
             Point2D p1 = new Point2D(rnd.Next(50, (int)maxX), rnd.Next(50, (int)maxY));
             Point2D p2 = new Point2D(rnd.Next(50, (int)maxX), rnd.Next(50, (int)maxY));
@@ -80,7 +80,7 @@ namespace Lab1Geometry
             double maxX = Scene.ActualWidth - 100;
             double maxY = Scene.ActualHeight - 100;
 
-            if (maxX < 50 || maxY < 50) return;
+            if (maxX < 100 || maxY < 100) return;
 
             Point2D startPoint = new Point2D(rnd.Next(20, (int)maxX), rnd.Next(20, (int)maxY));
             int width = rnd.Next(30, 100);
@@ -106,7 +106,7 @@ namespace Lab1Geometry
             double maxX = Scene.ActualWidth - 100;
             double maxY = Scene.ActualHeight - 100;
 
-            if (maxX < 50 || maxY < 50) return;
+            if (maxX < 100 || maxY < 100) return;
 
             Point2D startPoint = new Point2D(rnd.Next(20, (int)maxX), rnd.Next(20, (int)maxY));
             int size = rnd.Next(30, 100);
@@ -177,8 +177,7 @@ namespace Lab1Geometry
             if (currentRectangle != null && originalRectPoint != null)
             {
                 Point2D newPoint = new Point2D(
-                    originalRectPoint.getX() + deltaX,
-                    originalRectPoint.getY() + deltaY);
+                    originalRectPoint.getX() + deltaX,originalRectPoint.getY() + deltaY);
 
                 currentRectangle = new Rectangle(newPoint, originalRectWidth, originalRectHeight);
                 DrawRectangle(currentRectangle);
@@ -188,8 +187,7 @@ namespace Lab1Geometry
             if (currentSquare != null && originalSquarePoint != null)
             {
                 Point2D newPoint = new Point2D(
-                    originalSquarePoint.getX() + deltaX,
-                    originalSquarePoint.getY() + deltaY);
+                    originalSquarePoint.getX() + deltaX,originalSquarePoint.getY() + deltaY);
 
                 currentSquare = new Rectangle(newPoint, originalSquareSize, originalSquareSize);
                 DrawRectangle(currentSquare);
